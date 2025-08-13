@@ -1,11 +1,9 @@
-# Take input from the user
-num = int(input("Enter a number: "))
-
-reversed_num = 0
-
-while num != 0:
-    remainder = num % 10              # Get last digit
-    reversed_num = reversed_num * 10 + remainder  # Append to reversed number
-    num //= 10                         # Remove last digit
-
-print("Reversed number:", reversed_num)
+x=int(input("Enter a Number: "))
+s=0
+while x!=0:
+    r=x%10
+    s=(s*10)+r
+    x=x//10
+    
+print(f"reverse Number is {s}")   
+    
